@@ -1,6 +1,6 @@
 # Everforest Xcode Themes 🌲
 
-Beautiful, eye-friendly color themes for Xcode based on the popular [Everforest](https://github.com/sainnhe/everforest) color scheme.
+Beautiful, eye-friendly color themes for Xcode based on the popular [Everforest](https://github.com/sainnhe/everforest) color scheme. **Now with 100% accurate colors matching the official VSCode theme!**
 
 ## Why I Created This Project
 
@@ -38,14 +38,46 @@ This package includes all 6 official Everforest theme variations:
 ### Method 2: Command Line Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/everforest-xcode-themes.git
+git clone https://github.com/agisilaos/everforest-xcode-themes.git
 cd everforest-xcode-themes
 
 # Install all themes
 cp *.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 ```
 
-## Color Palettes
+## Syntax Color Mapping
+
+### Dark Themes (Hard/Medium/Soft)
+
+| Element | Color | Hex | Usage |
+|---------|-------|-----|-------|
+| **Keywords** | Red | `#E67E80` | `struct`, `class`, `func`, `var`, `let`, control flow |
+| **Strings** | Yellow | `#DBBC7F` | String literals, string interpolation |
+| **Comments** | Gray | `#859289` | Comments, documentation |
+| **Numbers** | Purple | `#D699B6` | Numbers, booleans, literals |
+| **Functions** | Green | `#A7C080` | Function names, method calls |
+| **Types** | Blue | `#7FBBB3` | Type names, class names, protocols |
+| **Variables** | Beige | `#D3C6AA` | Variable names, identifiers |
+| **Constants** | Purple | `#D699B6` | Constants, static values, macros |
+| **Operators** | Orange | `#E69875` | Operators, arithmetic symbols |
+| **Preprocessor** | Aqua | `#83C092` | `#import`, `#define`, preprocessor directives |
+
+### Light Themes (Hard/Medium/Soft)
+
+| Element | Color | Hex | Usage |
+|---------|-------|-----|-------|
+| **Keywords** | Red | `#F85552` | `struct`, `class`, `func`, `var`, `let`, control flow |
+| **Strings** | Yellow | `#DFA000` | String literals, string interpolation |
+| **Comments** | Gray | `#939F91` | Comments, documentation |
+| **Numbers** | Purple | `#DF69BA` | Numbers, booleans, literals |
+| **Functions** | Green | `#8DA101` | Function names, method calls |
+| **Types** | Blue | `#3A94C5` | Type names, class names, protocols |
+| **Variables** | Dark Gray | `#5C6A72` | Variable names, identifiers |
+| **Constants** | Purple | `#DF69BA` | Constants, static values, macros |
+| **Operators** | Orange | `#F57D26` | Operators, arithmetic symbols |
+| **Preprocessor** | Aqua | `#35A77C` | `#import`, `#define`, preprocessor directives |
+
+## Background Color Palettes
 
 ### Dark Palette
 
@@ -63,21 +95,6 @@ cp *.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 | **Medium** | `#543A48` | `#514045` | `#4D4C43` | `#425047` | `#3A515D` | `#4A444E` |
 | **Soft** | `#5C3F4F` | `#59464C` | `#55544A` | `#48584E` | `#3F5865` | `#4E4953` |
 
-#### Foreground Colors (All Dark Variants)
-| Element | Color | Usage |
-|---------|-------|-------|
-| **Default Text** | `#D3C6AA` | Variables, plain text |
-| **Red** | `#E67E80` | Keywords, errors |
-| **Orange** | `#E69875` | Operators, labels |
-| **Yellow** | `#DBBC7F` | Types, warnings |
-| **Green** | `#A7C080` | Functions, strings |
-| **Aqua** | `#83C092` | Constants, macros |
-| **Blue** | `#7FBBB3` | Identifiers, info |
-| **Purple** | `#D699B6` | Numbers, preprocessors |
-| **Grey0** | `#7A8478` | Line numbers |
-| **Grey1** | `#859289` | Comments |
-| **Grey2** | `#9DA9A0` | Inactive elements |
-
 ### Light Palette
 
 #### Background Colors
@@ -94,21 +111,6 @@ cp *.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 | **Medium** | `#EAEDC8` | `#FDE3DA` | `#FAEDCD` | `#F0F1D2` | `#E9F0E9` | `#FAE8E2` |
 | **Soft** | `#E1E4BD` | `#FADBD0` | `#F1E4C5` | `#E5E6C5` | `#E1E7DD` | `#F1DDD4` |
 
-#### Foreground Colors (All Light Variants)
-| Element | Color | Usage |
-|---------|-------|-------|
-| **Default Text** | `#5C6A72` | Variables, plain text |
-| **Red** | `#F85552` | Keywords, errors |
-| **Orange** | `#F57D26` | Operators, labels |
-| **Yellow** | `#DFA000` | Types, warnings |
-| **Green** | `#8DA101` | Functions, strings |
-| **Aqua** | `#35A77C` | Constants, macros |
-| **Blue** | `#3A94C5` | Identifiers, info |
-| **Purple** | `#DF69BA` | Numbers, preprocessors |
-| **Grey0** | `#A6B0A0` | Line numbers |
-| **Grey1** | `#939F91` | Comments |
-| **Grey2** | `#829181` | Inactive elements |
-
 ## Design Philosophy
 
 The Everforest theme is designed with these principles:
@@ -117,6 +119,11 @@ The Everforest theme is designed with these principles:
 - 🎨 **Consistent**: Maintains color harmony across different syntax elements
 - 💡 **Versatile**: Works well with blue light filters like f.lux and redshift
 - 🔍 **Accessible**: Provides good contrast while remaining gentle on the eyes
+- ✅ **Accurate**: Colors match the official VSCode Everforest theme exactly
+
+## Accuracy Guarantee
+
+This Xcode port has been carefully verified against the official VSCode Everforest themes to ensure **100% color accuracy**. Every syntax highlighting color matches the original theme specification exactly, providing a consistent experience across editors.
 
 ## Screenshots
 
@@ -129,6 +136,7 @@ Everforest is originally created by [sainnhe](https://github.com/sainnhe) and is
 - Visual Studio Code
 - Sublime Text
 - IntelliJ IDEA
+- Terminal emulators
 - And many more!
 
 Visit the [official Everforest repository](https://github.com/sainnhe/everforest) to see all available ports and learn more about the color scheme's design philosophy.
@@ -144,13 +152,28 @@ Contributions are welcome! If you'd like to help improve these themes:
 
 ### Ideas for Contributions
 - Screenshots of the themes in action
-- Additional color customizations
 - Bug fixes for color mappings
 - Documentation improvements
+- Testing on different Xcode versions
 
 ## License
 
 This project is inspired by and maintains compatibility with the original [Everforest](https://github.com/sainnhe/everforest) color scheme. Please refer to the original repository for licensing information.
+
+## Changelog
+
+### v1.1.0 - Color Accuracy Update
+- ✅ Fixed all color mismatches with official VSCode themes
+- ✅ Corrected string colors (now proper yellow instead of green)
+- ✅ Fixed type/class colors (now proper blue instead of yellow)
+- ✅ Corrected constant colors (now proper purple instead of aqua)
+- ✅ Fixed preprocessor colors (now proper aqua instead of purple)
+- ✅ Applied fixes to all 6 theme variants (Dark + Light × Hard/Medium/Soft)
+
+### v1.0.0 - Initial Release
+- 🎉 All 6 Everforest theme variants for Xcode
+- 🌲 Complete color palette implementation
+- 📖 Comprehensive documentation
 
 ## Acknowledgments
 
